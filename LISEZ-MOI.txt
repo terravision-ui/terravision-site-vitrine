@@ -1,0 +1,31 @@
+TERRAVISION Études & Conseil — site vitrine (version initiale)
+=============================================================
+
+CONTENU
+- index.html : page complète du site
+- style.css : design responsive (ordinateur, tablette, téléphone)
+- script.js : menu mobile et année automatique
+
+APERÇU LOCAL
+1. Décompressez le fichier ZIP.
+2. Ouvrez le dossier terravision_site.
+3. Double-cliquez sur index.html pour afficher le site dans un navigateur.
+   Une connexion Internet est nécessaire pour charger les polices Google.
+
+INFORMATIONS À CONFIRMER AVANT PUBLICATION
+- Ajouter un numéro de téléphone professionnel si souhaité.
+- Ajouter une adresse physique uniquement si elle est officielle.
+- Ajouter des photos, cartes et livrables réels dont vous détenez les droits.
+- Vérifier que les domaines de services décrivent bien les prestations effectivement proposées.
+- Ajouter les éventuelles mentions légales et informations d'immatriculation applicables.
+
+IMPORTANT — WORDPRESS.COM GRATUIT
+Ce dossier est un site vitrine statique autonome. WordPress.com gratuit ne permet pas
+d'importer directement ce dossier comme un thème personnalisé. Il peut servir de maquette
+de référence pour reconstruire les pages dans l'éditeur WordPress.com. Pour publier ce
+code tel quel, il faut un hébergement statique compatible ou un hébergement web permettant
+de déposer les fichiers.
+
+Aucune adresse, aucun téléphone, aucun client ni aucune réalisation commerciale n'ont
+été inventés. Les deux projets affichés sont présentés comme travaux académiques/techniques
+de référence, et non comme contrats clients.
