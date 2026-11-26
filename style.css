@@ -79,6 +79,7 @@
 
 /* Language selector */
 .language-switch{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid #dce6e0;border-radius:20px;white-space:nowrap}
-.language-switch a{padding:5px 8px!important;border-radius:16px;font-size:10px!important;font-weight:700;color:#566975}
-.language-switch a.active{background:#102b46;color:#fff}
-@media(max-width:680px){.language-switch{align-self:flex-start;margin-top:8px}.language-switch a{padding:7px 12px!important}}
+.language-switch button{padding:5px 8px!important;border:0;border-radius:16px;background:transparent;font:700 10px "DM Sans",sans-serif;color:#566975;cursor:pointer}
+.language-switch button.active{background:#102b46;color:#fff}
+.site-language[hidden]{display:none!important}
+@media(max-width:680px){.language-switch{align-self:flex-start;margin-top:8px}.language-switch button{padding:7px 12px!important}}
