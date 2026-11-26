@@ -20,3 +20,24 @@
 .phone-list a:hover{text-decoration:underline}
 @media(max-width:900px){.brand-logo{width:195px;max-height:70px}.approach-band{gap:24px}}
 @media(max-width:680px){.brand-logo{width:185px;max-height:66px}.approach-band{grid-template-columns:1fr;gap:14px;padding:23px 20px;margin-top:40px}.audience-grid{grid-template-columns:1fr}.audience-card{min-height:0;padding:20px}}
+
+/* Training catalogue */
+.catalog-heading{align-items:end;margin-bottom:38px}
+.training-section .catalog-heading h2{color:#fff}
+.training-section .catalog-heading>p{color:#c0cdd5}
+.catalog-groups{display:grid;gap:38px}
+.catalog-group>h3{font:700 20px Manrope,sans-serif;color:#fff;margin:0 0 16px}
+.catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.catalog-card{background:#fff;color:#17364a;padding:23px 22px 19px;border-top:3px solid #079f9c;display:flex;flex-direction:column;min-height:282px}
+.catalog-number{font-size:9px;font-weight:700;letter-spacing:1.4px;color:#168980}
+.catalog-card h4{font:700 17px/1.35 Manrope,sans-serif;margin:13px 0 8px}
+.catalog-card p{font-size:12px;color:#6e7d86;line-height:1.65;margin:0 0 16px;flex:1}
+.catalog-meta{display:flex;flex-direction:column;gap:5px;border-top:1px solid #e6ece9;padding-top:12px}
+.catalog-meta span{font-size:10px;color:#72828a}
+.catalog-meta b{font:700 12px Manrope,sans-serif;color:#17364a}
+.catalog-cta{display:flex;justify-content:space-between;gap:8px;align-items:center;color:#087e78;font-size:11px;font-weight:700;margin-top:14px}
+.catalog-cta:hover{text-decoration:underline}
+.catalog-cta span{font-size:17px}
+.catalog-note{margin:24px 0 0;color:#c0cdd5;font-size:11px}
+@media(max-width:900px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.catalog-grid{grid-template-columns:1fr}.catalog-groups{gap:30px}.catalog-card{min-height:0}.catalog-heading{display:block}}
