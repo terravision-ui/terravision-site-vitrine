@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "TERRAVISION — Formations & Data Lab",
+  "short_name": "TERRAVISION",
+  "description": "Formations en géomatique et espace d’exploration de données.",
+  "lang": "fr",
+  "start_url": "./?source=install",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f8faf9",
+  "theme_color": "#102b46",
+  "icons": [
+    { "src": "./app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

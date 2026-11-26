@@ -3,182 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TERRAVISION Études &amp; Conseil, basé à N’Djamena, accompagne les organisations en géomatique, cartographie, télédétection, analyse de données, études territoriales et formation.">
   <meta name="theme-color" content="#102b46">
-  <title>TERRAVISION Études & Conseil | Géomatique et données au Tchad</title>
-  <link rel="icon" type="image/webp" href="logo-terravision.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="description" content="TERRAVISION — formations en géomatique et espace de découverte pour l'analyse de données géographiques.">
+  <title>TERRAVISION | Formations & Data Lab</title>
+  <link rel="icon" href="logo-terravision.webp" type="image/webp">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="site-language" id="site-fr" lang="fr" data-title="TERRAVISION Études &amp; Conseil | Géomatique et données au Tchad" data-description="TERRAVISION Études &amp; Conseil, basé à N’Djamena, accompagne les organisations en géomatique, cartographie, télédétection, analyse de données, études territoriales et formation.">
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="#accueil" aria-label="TERRAVISION Études & Conseil, accueil">
-      <img class="brand-logo" src="logo-terravision.webp" alt="TERRAVISION Études & Conseil — Comprendre les territoires. Analyser les données. Éclairer les décisions.">
+  <header class="topbar">
+    <a class="brand" href="https://terravision-ui.github.io/terravision-site-vitrine/" aria-label="Retour au site TERRAVISION">
+      <img src="logo-terravision.webp" alt="TERRAVISION Études & Conseil">
+      <span>ESPACE TERRAVISION</span>
     </a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="main-nav" aria-label="Navigation principale">
-      <a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#expertises">Expertises</a><a href="#publics">Nos publics</a><a href="#realisations">Références</a><a href="#formateur">Formateur</a><a href="#formation">Catalogue</a><a href="#faq">FAQ</a><a class="nav-cta" href="#contact">Nous contacter</a>
-      <div class="language-switch" role="group" aria-label="Choisir la langue"><button type="button" class="active" data-language="fr" aria-pressed="true">FR</button><button type="button" data-language="en" aria-pressed="false">EN</button></div>
+    <div class="top-actions"><button class="button install-button" id="install-app" hidden>Installer l’application</button><a class="site-link" href="https://terravision-ui.github.io/terravision-site-vitrine/">Site vitrine <span>↗</span></a></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">APPRENDRE · ANALYSER · CARTOGRAPHIER</p>
+        <h1>Les données au service<br><em>des territoires.</em></h1>
+        <p class="hero-text">Retrouvez les formations TERRAVISION et explorez vos données dans un espace de travail simple.</p>
+        <div class="hero-actions"><button class="button primary" data-view="formations">Voir les formations</button><button class="button outline" data-view="laboratoire">Ouvrir le Data Lab</button></div>
+      </div>
+      <div class="hero-mark" aria-hidden="true"><span>GIS</span><i>+</i><span>DATA</span></div>
+    </section>
+
+    <nav class="tabs" aria-label="Sections de l’application" role="tablist">
+      <button class="tab active" id="tab-formations" role="tab" aria-selected="true" aria-controls="view-formations" data-view="formations">Formations</button>
+      <button class="tab" id="tab-laboratoire" role="tab" aria-selected="false" aria-controls="view-laboratoire" data-view="laboratoire">Data Lab</button>
     </nav>
-  </div>
-</header>
 
-<main>
-<section class="hero" id="accueil">
-  <div class="hero-grid"></div>
-  <div class="container hero-content">
-    <div class="eyebrow"><span></span> GÉOMATIQUE · DONNÉES · TERRITOIRES</div>
-    <h1>Comprendre les territoires.<br><em>Éclairer les décisions.</em></h1>
-    <p class="hero-lead">TERRAVISION Études & Conseil transforme les données géographiques et statistiques en informations claires pour soutenir la planification, le suivi de projets et la prise de décision.</p>
-    <div class="hero-actions"><a class="btn btn-primary" href="#expertises">Découvrir nos expertises <span>↗</span></a><a class="btn btn-ghost" href="#contact">Parler de votre projet</a></div>
-    <div class="hero-note"><span class="note-line"></span><span>Basé à N’Djamena, Tchad · Interventions selon les projets et partenariats</span></div>
-  </div>
-  <div class="hero-visual" aria-hidden="true">
-    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-    <div class="earth"><div class="earth-lines"></div><div class="earth-dot d1"></div><div class="earth-dot d2"></div><div class="earth-dot d3"></div></div>
-    <div class="visual-tag tag-top"><b>SIG</b><span>Analyse spatiale</span></div>
-    <div class="visual-tag tag-bottom"><b>DATA</b><span>Décision éclairée</span></div>
-  </div>
-</section>
+    <section class="view" id="view-formations" role="tabpanel" aria-labelledby="tab-formations">
+      <div class="section-title"><div><p class="eyebrow dark">CATALOGUE</p><h2>Développez vos compétences</h2></div><p>Les programmes, formats disponibles et tarifs sont communiqués sur demande.</p></div>
+      <div class="course-groups">
+        <div class="course-group"><h3>Géomatique & cartographie</h3><div class="course-grid">
+          <article class="course-card"><span class="course-tag">SIG · DÉBUTANT</span><h4>Initiation aux SIG et à la cartographie</h4><p>Découvrir les données géographiques et réaliser ses premières cartes.</p><button class="text-button enroll" data-course="Initiation aux SIG et à la cartographie">Demander le programme <span>→</span></button></article>
+          <article class="course-card"><span class="course-tag">CARTOGRAPHIE</span><h4>Créer une carte thématique</h4><p>Organiser les données, choisir une représentation et composer une carte lisible.</p><button class="text-button enroll" data-course="Créer une carte thématique">Demander le programme <span>→</span></button></article>
+          <article class="course-card"><span class="course-tag">TÉLÉDÉTECTION</span><h4>Images satellitaires</h4><p>Comprendre les images satellitaires et leurs usages pour l’étude des territoires.</p><button class="text-button enroll" data-course="Télédétection et images satellitaires">Demander le programme <span>→</span></button></article>
+        </div></div>
+        <div class="course-group"><h3>Analyse de données</h3><div class="course-grid">
+          <article class="course-card"><span class="course-tag">DONNÉES</span><h4>Préparer et organiser ses données</h4><p>Structurer un fichier, repérer les erreurs courantes et préparer l’analyse.</p><button class="text-button enroll" data-course="Préparer et organiser ses données">Demander le programme <span>→</span></button></article>
+          <article class="course-card"><span class="course-tag">ANALYSE</span><h4>Analyser et présenter les résultats</h4><p>Transformer les données en résultats clairs et utiles à la décision.</p><button class="text-button enroll" data-course="Analyser des données et présenter les résultats">Demander le programme <span>→</span></button></article>
+          <article class="course-card"><span class="course-tag">VISUALISATION</span><h4>Créer des tableaux et graphiques</h4><p>Choisir des visualisations qui communiquent clairement les analyses.</p><button class="text-button enroll" data-course="Créer des tableaux et graphiques clairs">Demander le programme <span>→</span></button></article>
+        </div></div>
+      </div>
+      <div class="notice"><span>ℹ</span><p><b>Comment s’inscrire ?</b> Choisissez une formation et envoyez votre demande. TERRAVISION vous répondra avec le programme, les formats disponibles et le tarif. Le paiement en ligne n’est pas encore activé.</p></div>
+    </section>
 
-<section class="trust-strip"><div class="container trust-inner"><span>NOTRE CHAMP D’ACTION</span><b>Géomatique & SIG</b><i></i><b>Télédétection</b><i></i><b>Analyse de données</b><i></i><b>Études territoriales</b><i></i><b>Formation</b></div></section>
+    <section class="view" id="view-laboratoire" role="tabpanel" aria-labelledby="tab-laboratoire" hidden>
+      <div class="section-title"><div><p class="eyebrow dark">OUTIL D’EXPLORATION</p><h2>Votre Data Lab</h2></div><p>Importez un fichier CSV pour consulter un aperçu, des statistiques descriptives et, si vos données contiennent des coordonnées, une carte de points.</p></div>
+      <div class="privacy-note"><span>🔒</span><p><b>Vos données restent sur votre appareil.</b> Le fichier est lu dans votre navigateur et n’est pas téléversé vers un serveur.</p></div>
+      <label class="upload-zone" for="csv-file"><span class="upload-icon">↑</span><b>Choisissez un fichier CSV</b><small>Formats de nombres acceptés : 12.5 ou 12,5 · séparateurs virgule ou point-virgule</small><input id="csv-file" type="file" accept=".csv,text/csv"></label>
+      <p class="status" id="file-status" aria-live="polite">Aucun fichier sélectionné.</p>
+      <div id="analysis-results" hidden>
+        <div class="metrics" id="metrics"></div>
+        <div class="analysis-grid">
+          <section class="panel"><div class="panel-heading"><div><p class="eyebrow dark">APERÇU</p><h3>Premières lignes</h3></div><span class="subtle" id="preview-label"></span></div><div class="table-wrap"><table id="preview-table"></table></div></section>
+          <section class="panel"><div class="panel-heading"><div><p class="eyebrow dark">STATISTIQUES</p><h3>Colonnes numériques</h3></div></div><div class="table-wrap"><table id="stats-table"></table></div></section>
+        </div>
+        <section class="panel map-panel"><div class="panel-heading"><div><p class="eyebrow dark">SIG · COORDONNÉES</p><h3>Carte de points</h3><p class="subtle">Visualisation simple sans fond de carte. Choisissez les colonnes longitude et latitude.</p></div><div class="coordinate-selectors"><label>Longitude<select id="longitude-field" disabled></select></label><label>Latitude<select id="latitude-field" disabled></select></label></div></div><div class="map-wrap"><canvas id="point-map" aria-label="Carte de points issue des coordonnées du fichier"></canvas><p id="map-message" class="map-message">Importez un fichier comportant des colonnes de coordonnées pour afficher les points.</p></div></section>
+      </div>
+    </section>
+  </main>
 
-<section class="section about-section" id="apropos">
-  <div class="container two-col">
-    <div><div class="section-kicker">01 — QUI SOMMES-NOUS ?</div><h2>Des territoires mieux compris.<br><em>Des décisions éclairées.</em></h2></div>
-    <div class="about-copy"><p class="large-copy">TERRAVISION Études & Conseil est un bureau d’études et de conseil basé à N’Djamena, au Tchad. Il met les outils géospatiaux, les méthodes d’analyse et les technologies numériques au service de la connaissance des territoires.</p><p>Nous accompagnons les organisations publiques et privées, les ONG, les projets de développement et les bureaux d’études dans la collecte, le traitement, l’analyse et la valorisation de données utiles à leurs projets.</p><p>Notre ambition est de proposer des services méthodiques, accessibles et adaptés aux réalités locales, au Tchad et au-delà.</p><a class="text-link" href="#contact">Échangeons sur vos besoins <span>→</span></a></div>
-  </div>
-  <div class="container values-grid">
-    <article class="value-card"><span class="value-num">01</span><h3>Rigueur & qualité</h3><p>Des méthodes documentées, des contrôles qualité et une attention portée à la fiabilité des données.</p></article>
-    <article class="value-card"><span class="value-num">02</span><h3>Éthique & transparence</h3><p>Des sources, hypothèses, délais et limites techniques expliqués clairement, dans le respect de la confidentialité.</p></article>
-    <article class="value-card"><span class="value-num">03</span><h3>Solutions adaptées</h3><p>Des livrables pensés pour le besoin et les moyens de chaque mission, avec des compétences complémentaires si nécessaire.</p></article>
-  </div>
-  <div class="container approach-band"><div><span class="section-kicker">NOTRE APPROCHE</span><h3>De données complexes à des résultats utilisables.</h3></div><p>Nous cadrons le besoin, documentons les sources, vérifions la qualité des données et explicitons leurs limites. Les résultats sont présentés sous une forme claire : cartes, tableaux, bases de données, rapports ou supports de formation.</p></div>
-</section>
-
-<section class="section expertise-section" id="expertises">
-  <div class="container">
-    <div class="section-heading"><div><div class="section-kicker">02 — NOS DOMAINES D’INTERVENTION</div><h2>Des compétences au service<br><em>de vos projets.</em></h2></div><p>Des prestations adaptées aux besoins des institutions, collectivités, ONG, bureaux d’études, entreprises et projets de développement.</p></div>
-    <div class="expertise-grid">
-      <article class="expertise-card"><div class="card-icon">⌖</div><span class="card-index">01 / ESPACE</span><h3>Géomatique, cartographie & SIG</h3><p>Production et gestion de l’information géographique pour la planification et l’aide à la décision.</p><ul><li>Cartes thématiques et mise à jour cartographique</li><li>Bases de données géographiques</li><li>Géoréférencement et analyse spatiale</li></ul></article>
-      <article class="expertise-card"><div class="card-icon">◉</div><span class="card-index">02 / IMAGERIE</span><h3>Télédétection & occupation du sol</h3><p>Traitement et interprétation d’images satellitaires selon les données disponibles.</p><ul><li>Occupation et utilisation du sol</li><li>Analyse des changements dans le temps</li><li>Synthèses cartographiques environnementales</li></ul></article>
-      <article class="expertise-card"><div class="card-icon">▥</div><span class="card-index">03 / DONNÉES</span><h3>Collecte & analyse de données</h3><p>De la préparation des données à la présentation de résultats compréhensibles.</p><ul><li>Questionnaires et formulaires de collecte</li><li>Nettoyage, structuration et contrôle qualité</li><li>Analyses descriptives et tableaux de bord</li></ul></article>
-      <article class="expertise-card"><div class="card-icon">⌁</div><span class="card-index">04 / TERRITOIRES</span><h3>Études territoriales & environnement</h3><p>Appui à l’analyse des dynamiques urbaines, rurales et environnementales.</p><ul><li>Diagnostics territoriaux et cartographie des enjeux</li><li>Évolution de l’espace urbain et rural</li><li>Appui cartographique à l’aménagement</li></ul></article>
-      <article class="expertise-card"><div class="card-icon">✳</div><span class="card-index">05 / CAPACITÉS</span><h3>Formation & renforcement des capacités</h3><p>Des apprentissages adaptés au niveau des participants et aux besoins des équipes.</p><ul><li>Bureautique et outils de productivité</li><li>Initiation et perfectionnement en SIG</li><li>Outils de données et présentation des résultats</li></ul></article>
-    </div>
-  </div>
-</section>
-
-<section class="section audience-section" id="publics">
-  <div class="container">
-    <div class="section-heading"><div><div class="section-kicker">03 — À QUI NOUS NOUS ADRESSONS</div><h2>Un appui adapté à<br><em>chaque acteur.</em></h2></div><p>Nous travaillons avec les organisations qui ont besoin de mieux connaître un territoire, d’analyser leurs données ou de renforcer leurs capacités.</p></div>
-    <div class="audience-grid">
-      <article class="audience-card"><span>01</span><h3>Administrations & collectivités</h3><p>Information géographique pour la planification et la connaissance locale.</p></article>
-      <article class="audience-card"><span>02</span><h3>ONG & organisations de développement</h3><p>Appui aux projets et à la valorisation de données de suivi.</p></article>
-      <article class="audience-card"><span>03</span><h3>Projets sectoriels</h3><p>Environnement, agriculture, urbanisme et développement local.</p></article>
-      <article class="audience-card"><span>04</span><h3>Bureaux d’études & consultants</h3><p>Expertise géospatiale et données en appui à des missions pluridisciplinaires.</p></article>
-      <article class="audience-card"><span>05</span><h3>Entreprises & établissements de formation</h3><p>Analyses, accompagnement technique et renforcement des compétences.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="section projects-section" id="realisations">
-  <div class="container">
-    <div class="section-heading"><div><div class="section-kicker">04 — TRAVAUX DE RÉFÉRENCE</div><h2>La méthode en pratique.</h2></div><p>Travaux académiques et techniques de référence présentés à titre démonstratif. Ils ne constituent pas une liste de contrats clients.</p></div>
-    <div class="project-grid">
-      <article class="project-card project-map"><div class="map-art"><span class="map-label">N’DJAMÉNA · TCHAD</span><svg viewBox="0 0 500 260" preserveAspectRatio="xMidYMid slice"><path d="M-10 80 Q80 10 150 75T300 60T520 30M-20 150Q80 100 160 150T330 130T520 170M20 270Q80 180 180 220T360 210T510 240M100 -20Q150 60 130 130T170 280M270 -20Q240 60 290 130T270 280M400 -20Q360 60 410 140T390 280" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M40 20L90 60 70 120 140 160 120 230 220 250 280 180 350 200 420 120 470 80" fill="none" stroke="#31c7b7" stroke-width="3"/><circle cx="220" cy="145" r="7" fill="#d9a85b"/><circle cx="220" cy="145" r="18" fill="none" stroke="#d9a85b" opacity=".6"/></svg></div><div class="project-info"><span class="project-type">SIG · AMÉNAGEMENT URBAIN</span><h3>Accessibilité aux infrastructures marchandes communales</h3><p>Étude de la répartition et de l’accessibilité des marchés dans le premier arrondissement de N’Djamena à l’aide des outils SIG.</p><span class="project-foot">Travail académique de référence <b>↗</b></span></div></article>
-      <article class="project-card project-satellite"><div class="sat-art"><div class="sat-grid"></div><div class="sat-circle"></div><span>LAND COVER<br>CHANGE ANALYSIS</span></div><div class="project-info"><span class="project-type">TÉLÉDÉTECTION · ENVIRONNEMENT</span><h3>Évolution de l’occupation du sol à N’Djamena</h3><p>Analyse diachronique fondée sur des images satellitaires Landsat pour étudier les changements entre 2015 et 2025.</p><span class="project-foot">Travail technique de référence <b>↗</b></span></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section trainer-section" id="formateur">
-  <div class="container trainer-wrap">
-    <div class="trainer-identity"><div class="trainer-monogram" aria-hidden="true">YM</div><span class="section-kicker">VOTRE FORMATEUR</span><h2>Youssouf<br><em>Mounganan</em></h2><p>Géomaticien · Cartographie · Télédétection · SIG</p></div>
-    <div class="trainer-bio"><p class="trainer-intro">Titulaire d’un Master professionnel en Cartographie, Télédétection et Systèmes d’Information Géographique, Youssouf Mounganan accompagne les apprenants dans la découverte des outils géospatiaux et l’analyse de données.</p><p>Son parcours comprend des travaux pratiques en géomatique et en cartographie, ainsi qu’une expérience de formation en bureautique à N’Djamena. Il met l’accent sur une approche pratique, progressive et adaptée aux objectifs des apprenants.</p><h3>Domaines et outils pratiqués</h3><div class="tool-tags"><span>QGIS</span><span>ArcGIS</span><span>QField</span><span>Google Earth Pro</span><span>Power BI</span><span>Excel</span><span>R</span><span>SPSS</span><span>Stata</span><span>Python</span><span>PostgreSQL/PostGIS</span><span>KoboToolbox/KoboCollect</span><span>ODK Collect</span><span>CSPro</span><span>Télédétection</span></div><p class="trainer-education">Master professionnel en SIG, Université de Dschang · Licence en Géographie, Université Adam Barka d’Abéché</p></div>
-  </div>
-</section>
-
-<section class="section training-section" id="formation">
-  <div class="container">
-    <div class="section-heading catalog-heading"><div><div class="section-kicker">05 — CATALOGUE DES FORMATIONS</div><h2>Apprendre la géomatique<br><em>et l’analyse de données.</em></h2></div><p>Choisissez un thème pour demander le programme détaillé, les formats disponibles et le tarif.</p></div>
-    <div class="catalog-groups">
-      <section class="catalog-group" aria-labelledby="catalog-geo"><h3 id="catalog-geo">Géomatique & cartographie</h3><div class="catalog-grid">
-        <article class="catalog-card"><span class="catalog-number">GÉOMATIQUE · 01</span><h4>Initiation aux SIG et à la cartographie</h4><p>Découvrir les systèmes d’information géographique et réaliser ses premières cartes.</p><div class="catalog-meta"><span>Vidéo · atelier · support numérique</span><b>Tarif sur demande</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Catalogue%20-%20Initiation%20aux%20SIG">Demander le programme et le tarif <span>→</span></a></article>
-        <article class="catalog-card"><span class="catalog-number">GÉOMATIQUE · 02</span><h4>Créer une carte thématique</h4><p>Organiser les données, choisir une représentation adaptée et composer une carte lisible.</p><div class="catalog-meta"><span>Vidéo · atelier · support numérique</span><b>Tarif sur demande</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Catalogue%20-%20Carte%20th%C3%A9matique">Demander le programme et le tarif <span>→</span></a></article>
-        <article class="catalog-card"><span class="catalog-number">GÉOMATIQUE · 03</span><h4>Télédétection et images satellitaires</h4><p>Comprendre les images satellitaires et explorer leurs usages pour l’étude des territoires.</p><div class="catalog-meta"><span>Vidéo · atelier · support numérique</span><b>Tarif sur demande</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Catalogue%20-%20T%C3%A9l%C3%A9d%C3%A9tection">Demander le programme et le tarif <span>→</span></a></article>
-      </div></section>
-      <section class="catalog-group" aria-labelledby="catalog-data"><h3 id="catalog-data">Analyse de données</h3><div class="catalog-grid">
-        <article class="catalog-card"><span class="catalog-number">DONNÉES · 01</span><h4>Préparer et organiser ses données</h4><p>Structurer un jeu de données, repérer les erreurs courantes et préparer l’analyse.</p><div class="catalog-meta"><span>Vidéo · atelier · support numérique</span><b>Tarif sur demande</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Catalogue%20-%20Pr%C3%A9parer%20ses%20donn%C3%A9es">Demander le programme et le tarif <span>→</span></a></article>
-        <article class="catalog-card"><span class="catalog-number">DONNÉES · 02</span><h4>Analyser des données et présenter les résultats</h4><p>Passer des données à des résultats compréhensibles et utiles à la décision.</p><div class="catalog-meta"><span>Vidéo · atelier · support numérique</span><b>Tarif sur demande</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Catalogue%20-%20Analyse%20de%20donn%C3%A9es">Demander le programme et le tarif <span>→</span></a></article>
-        <article class="catalog-card"><span class="catalog-number">DONNÉES · 03</span><h4>Créer des tableaux et graphiques clairs</h4><p>Choisir des tableaux et visualisations adaptés pour communiquer ses analyses.</p><div class="catalog-meta"><span>Vidéo · atelier · support numérique</span><b>Tarif sur demande</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Catalogue%20-%20Tableaux%20et%20graphiques">Demander le programme et le tarif <span>→</span></a></article>
-      </div></section>
-    </div>
-    <p class="catalog-note">Les formats, le contenu, la disponibilité et les tarifs sont communiqués avant toute inscription ou commande. Le paiement en ligne sera ajouté après le choix d’une solution de paiement.</p>
-  </div>
-</section>
-
-<section class="section faq-section" id="faq">
-  <div class="container">
-    <div class="section-heading"><div><div class="section-kicker">06 — QUESTIONS FRÉQUENTES</div><h2>Vous souhaitez en<br><em>savoir plus ?</em></h2></div><p>Les réponses essentielles avant de demander un programme ou de vous inscrire.</p></div>
-    <div class="faq-list">
-      <details><summary>Quels sujets de formation propose TERRAVISION ?</summary><p>Le catalogue présente des sujets en SIG et cartographie, télédétection, préparation et analyse de données, ainsi que création de tableaux et graphiques.</p></details>
-      <details><summary>Les formations sont-elles proposées en vidéo, en livre ou en direct ?</summary><p>Les formats disponibles dépendent de chaque sujet. Écrivez-nous pour connaître les supports prêts et le format proposé avant de commander.</p></details>
-      <details><summary>Combien coûte une formation ou un support ?</summary><p>Le tarif est communiqué sur demande avec le programme détaillé. Aucun achat n’est confirmé avant que le contenu et le prix vous aient été précisés.</p></details>
-      <details><summary>Comment demander le programme ou s’inscrire ?</summary><p>Cliquez sur « Demander le programme et le tarif » dans le catalogue, ou contactez-nous par WhatsApp. Nous vous répondrons avec les informations nécessaires.</p></details>
-      <details><summary>Comment effectuer le paiement ?</summary><p>Les modalités de paiement sont communiquées directement avant l’inscription. Le paiement en ligne sur le site n’est pas encore activé.</p></details>
-      <details><summary>Les formations peuvent-elles être adaptées à mon niveau ?</summary><p>Indiquez votre niveau et votre objectif lors de la demande. Nous vous préciserons le programme adapté et les possibilités d’accompagnement.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="section contact-section" id="contact">
-  <div class="container contact-wrap">
-    <div><div class="section-kicker">06 — CONTACT</div><h2>Parlons de<br><em>votre projet.</em></h2><p>Vous recherchez un appui en cartographie, en analyse spatiale, en traitement de données, en étude territoriale ou en formation ? Présentez-nous votre besoin.</p></div>
-    <div class="contact-panel"><span class="contact-label">CONTACT PROFESSIONNEL</span><a class="email-link" href="mailto:terravisionetudesconseil@gmail.com">terravisionetudesconseil@gmail.com</a><div class="phone-list"><a href="tel:+23569869557">+235 69 86 95 57</a><a href="tel:+23597620574">+235 97 62 05 74</a></div><p>Pour toute demande d’information, de collaboration ou de partenariat, écrivez-nous ou appelez-nous.</p><a class="btn btn-primary" href="mailto:terravisionetudesconseil@gmail.com?subject=Demande%20de%20renseignement%20-%20TERRAVISION">Envoyer un e-mail <span>↗</span></a><div class="contact-meta"><span>N’Djamena, Tchad</span><span>Interventions selon les projets et partenariats</span></div></div>
-  </div>
-</section>
-</main>
-
-<details class="whatsapp-float">
-  <summary aria-label="Choisir un numéro pour contacter TERRAVISION sur WhatsApp"><span aria-hidden="true">◉</span> WhatsApp</summary>
-  <div class="whatsapp-options" aria-label="Numéros WhatsApp de TERRAVISION">
-    <a href="https://wa.me/23569869557?text=Bonjour%20TERRAVISION%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20formations." target="_blank" rel="noopener noreferrer">+235 69 86 95 57</a>
-    <a href="https://wa.me/23597620574?text=Bonjour%20TERRAVISION%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20formations." target="_blank" rel="noopener noreferrer">+235 97 62 05 74</a>
-  </div>
-</details>
-<footer class="site-footer"><div class="container footer-top"><a class="brand brand-footer" href="#accueil" aria-label="TERRAVISION, retour à l’accueil"><img class="brand-logo" src="logo-terravision.webp" alt="TERRAVISION Études & Conseil"></a><p>Comprendre les territoires. Analyser les données. Éclairer les décisions.</p><a href="#accueil" class="back-top">Retour en haut ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> TERRAVISION Études & Conseil.</span><span>Géomatique · Données · Territoires · N’Djamena, Tchad</span><a href="brochure-fr.pdf" target="_blank" rel="noopener">Télécharger la brochure (PDF)</a></div></footer>
-</div>
-<div class="site-language" id="site-en" lang="en" data-title="TERRAVISION Studies &amp; Consulting | Geomatics and Data in Chad" data-description="TERRAVISION Studies &amp; Consulting, based in N&#x27;Djamena, supports organizations with geomatics, mapping, remote sensing, data analysis, territorial studies and training." hidden>
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="#en-home" aria-label="TERRAVISION Studies & Consulting, home"><img class="brand-logo" src="logo-terravision.webp" alt="TERRAVISION Studies & Consulting — Understand territories. Analyse data. Inform decisions."></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#en-home">Home</a><a href="#en-about">About</a><a href="#en-expertise">Expertise</a><a href="#en-audiences">Who we serve</a><a href="#en-references">References</a><a href="#en-trainer">Trainer</a><a href="#en-training">Training</a><a href="#en-faq">FAQ</a><a class="nav-cta" href="#en-contact">Contact us</a>
-      <div class="language-switch" role="group" aria-label="Choose language"><button type="button" data-language="fr" aria-pressed="false">FR</button><button type="button" class="active" data-language="en" aria-pressed="true">EN</button></div>
-    </nav>
-  </div>
-</header>
-<main>
-<section class="hero" id="en-home"><div class="hero-grid"></div><div class="container hero-content"><div class="eyebrow"><span></span> GEOMATICS · DATA · TERRITORIES</div><h1>Understand territories.<br><em>Inform decisions.</em></h1><p class="hero-lead">TERRAVISION Studies & Consulting turns geographic and statistical data into clear information to support planning, project monitoring and decision-making.</p><div class="hero-actions"><a class="btn btn-primary" href="#en-expertise">Explore our expertise <span>↗</span></a><a class="btn btn-ghost" href="#en-contact">Discuss your project</a></div><div class="hero-note"><span class="note-line"></span><span>Based in N'Djamena, Chad · Assignments depend on projects and partnerships</span></div></div><div class="hero-visual" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="earth"><div class="earth-lines"></div><div class="earth-dot d1"></div><div class="earth-dot d2"></div><div class="earth-dot d3"></div></div><div class="visual-tag tag-top"><b>GIS</b><span>Spatial analysis</span></div><div class="visual-tag tag-bottom"><b>DATA</b><span>Informed decisions</span></div></div></section>
-<section class="trust-strip"><div class="container trust-inner"><span>OUR AREAS OF WORK</span><b>Geomatics & GIS</b><i></i><b>Remote sensing</b><i></i><b>Data analysis</b><i></i><b>Territorial studies</b><i></i><b>Training</b></div></section>
-<section class="section about-section" id="en-about"><div class="container two-col"><div><div class="section-kicker">01 — ABOUT US</div><h2>Better understood territories.<br><em>Better informed decisions.</em></h2></div><div class="about-copy"><p class="large-copy">TERRAVISION Studies & Consulting is a studies and consulting practice based in N'Djamena, Chad. It uses geospatial tools, analytical methods and digital technologies to support a better understanding of territories.</p><p>We support public and private organizations, NGOs, development projects and consulting firms with the collection, processing, analysis and communication of data for their work.</p><p>Our aim is to provide rigorous, accessible solutions suited to local realities in Chad and beyond.</p><a class="text-link" href="#en-contact">Tell us what you need <span>→</span></a></div></div><div class="container values-grid"><article class="value-card"><span class="value-num">01</span><h3>Rigour & quality</h3><p>Documented methods, quality checks and care for reliable data.</p></article><article class="value-card"><span class="value-num">02</span><h3>Ethics & transparency</h3><p>Clear explanations of sources, assumptions, timelines and technical limitations, with respect for confidentiality.</p></article><article class="value-card"><span class="value-num">03</span><h3>Fit-for-purpose solutions</h3><p>Deliverables shaped around each assignment's needs and resources, with complementary expertise when required.</p></article></div><div class="container approach-band"><div><span class="section-kicker">OUR APPROACH</span><h3>From complex data to useful results.</h3></div><p>We define the need, document sources, check data quality and explain limitations. Results are shared in clear formats such as maps, tables, databases, reports or training materials.</p></div></section>
-<section class="section expertise-section" id="en-expertise"><div class="container"><div class="section-heading"><div><div class="section-kicker">02 — WHAT WE DO</div><h2>Expertise to support<br><em>your projects.</em></h2></div><p>Services for public institutions, local authorities, NGOs, consulting firms, businesses and development projects.</p></div><div class="expertise-grid"><article class="expertise-card"><div class="card-icon">⌖</div><span class="card-index">01 / SPACE</span><h3>Geomatics, mapping & GIS</h3><p>Production and management of geographic information for planning and decision support.</p><ul><li>Thematic maps and map updates</li><li>Geographic databases</li><li>Georeferencing and spatial analysis</li></ul></article><article class="expertise-card"><div class="card-icon">◉</div><span class="card-index">02 / IMAGERY</span><h3>Remote sensing & land cover</h3><p>Processing and interpretation of satellite imagery, subject to data availability.</p><ul><li>Land cover and land use</li><li>Change analysis over time</li><li>Environmental mapping summaries</li></ul></article><article class="expertise-card"><div class="card-icon">▥</div><span class="card-index">03 / DATA</span><h3>Data collection & analysis</h3><p>From data preparation to clear presentation of results.</p><ul><li>Questionnaires and data collection forms</li><li>Cleaning, structuring and quality control</li><li>Descriptive analysis and dashboards</li></ul></article><article class="expertise-card"><div class="card-icon">⌁</div><span class="card-index">04 / TERRITORIES</span><h3>Territorial & environmental studies</h3><p>Support for analysing urban, rural and environmental dynamics.</p><ul><li>Territorial diagnostics and issue mapping</li><li>Urban and rural change</li><li>Mapping support for planning</li></ul></article><article class="expertise-card"><div class="card-icon">✳</div><span class="card-index">05 / CAPACITY</span><h3>Training & capacity building</h3><p>Learning tailored to participants' levels and team needs.</p><ul><li>Office productivity tools</li><li>GIS and mapping, introductory or advanced</li><li>Data tools and presentation of results</li></ul></article></div></div></section>
-<section class="section audience-section" id="en-audiences"><div class="container"><div class="section-heading"><div><div class="section-kicker">03 — WHO WE SERVE</div><h2>Support tailored to<br><em>each partner.</em></h2></div><p>We work with organizations seeking to understand a territory, analyse data or strengthen their teams' skills.</p></div><div class="audience-grid"><article class="audience-card"><span>01</span><h3>Government & local authorities</h3><p>Geographic information for planning and local knowledge.</p></article><article class="audience-card"><span>02</span><h3>NGOs & development organizations</h3><p>Project support and better use of monitoring data.</p></article><article class="audience-card"><span>03</span><h3>Sectoral projects</h3><p>Environment, agriculture, urban planning and local development.</p></article><article class="audience-card"><span>04</span><h3>Consulting firms & consultants</h3><p>Geospatial and data expertise for multidisciplinary assignments.</p></article><article class="audience-card"><span>05</span><h3>Businesses & training institutions</h3><p>Analysis, technical support and skills development.</p></article></div></div></section>
-<section class="section projects-section" id="en-references"><div class="container"><div class="section-heading"><div><div class="section-kicker">04 — SELECTED WORK</div><h2>Methods in practice.</h2></div><p>Academic and technical reference work shown for demonstration. These examples are not a list of client contracts.</p></div><div class="project-grid"><article class="project-card project-map"><div class="map-art"><span class="map-label">N'DJAMENA · CHAD</span><svg viewBox="0 0 500 260" preserveAspectRatio="xMidYMid slice"><path d="M-10 80 Q80 10 150 75T300 60T520 30M-20 150Q80 100 160 150T330 130T520 170M20 270Q80 180 180 220T360 210T510 240M100 -20Q150 60 130 130T170 280M270 -20Q240 60 290 130T270 280M400 -20Q360 60 410 140T390 280" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M40 20L90 60 70 120 140 160 120 230 220 250 280 180 350 200 420 120 470 80" fill="none" stroke="#31c7b7" stroke-width="3"/><circle cx="220" cy="145" r="7" fill="#d9a85b"/><circle cx="220" cy="145" r="18" fill="none" stroke="#d9a85b" opacity=".6"/></svg></div><div class="project-info"><span class="project-type">GIS · URBAN PLANNING</span><h3>Access to community market infrastructure</h3><p>Study of market distribution and accessibility in the first district of N'Djamena using GIS tools.</p><span class="project-foot">Academic reference work <b>↗</b></span></div></article><article class="project-card project-satellite"><div class="sat-art"><div class="sat-grid"></div><div class="sat-circle"></div><span>LAND COVER<br>CHANGE ANALYSIS</span></div><div class="project-info"><span class="project-type">REMOTE SENSING · ENVIRONMENT</span><h3>Land cover change in N'Djamena</h3><p>Time-series analysis using Landsat imagery to study changes from 2015 to 2025.</p><span class="project-foot">Technical reference work <b>↗</b></span></div></article></div></div></section>
-<section class="section trainer-section" id="en-trainer"><div class="container trainer-wrap"><div class="trainer-identity"><div class="trainer-monogram" aria-hidden="true">YM</div><span class="section-kicker">YOUR TRAINER</span><h2>Youssouf<br><em>Mounganan</em></h2><p>Geomatician · Mapping · Remote sensing · GIS</p></div><div class="trainer-bio"><p class="trainer-intro">Youssouf Mounganan holds a professional Master's degree in Cartography, Remote Sensing and Geographic Information Systems. He supports learners in exploring geospatial tools and data analysis.</p><p>His background includes practical geomatics and mapping work, as well as office-software training in N'Djamena. His teaching approach is practical, progressive and adapted to learners' objectives.</p><h3>Areas and tools</h3><div class="tool-tags"><span>QGIS</span><span>ArcGIS</span><span>QField</span><span>Google Earth Pro</span><span>Power BI</span><span>Excel</span><span>R</span><span>SPSS</span><span>Stata</span><span>Python</span><span>PostgreSQL/PostGIS</span><span>KoboToolbox/KoboCollect</span><span>ODK Collect</span><span>CSPro</span><span>Remote sensing</span></div><p class="trainer-education">Professional Master's in GIS, University of Dschang · Bachelor's in Geography, University of Adam Barka of Abéché</p></div></div></section>
-<section class="section training-section" id="en-training"><div class="container"><div class="section-heading catalog-heading"><div><div class="section-kicker">05 — TRAINING CATALOGUE</div><h2>Learn geomatics<br><em>and data analysis.</em></h2></div><p>Choose a topic to request the detailed programme, available formats and fee.</p></div><div class="catalog-groups"><section class="catalog-group" aria-labelledby="en-catalog-geo"><h3 id="en-catalog-geo">Geomatics & mapping</h3><div class="catalog-grid"><article class="catalog-card"><span class="catalog-number">GEOMATICS · 01</span><h4>Introduction to GIS and mapping</h4><p>Discover geographic information systems and create your first maps.</p><div class="catalog-meta"><span>Video · workshop · digital resource</span><b>Fee on request</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Training%20catalogue%20-%20Introduction%20to%20GIS">Request programme and fee <span>→</span></a></article><article class="catalog-card"><span class="catalog-number">GEOMATICS · 02</span><h4>Create a thematic map</h4><p>Organize data, choose an appropriate representation and design a clear map.</p><div class="catalog-meta"><span>Video · workshop · digital resource</span><b>Fee on request</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Training%20catalogue%20-%20Thematic%20map">Request programme and fee <span>→</span></a></article><article class="catalog-card"><span class="catalog-number">GEOMATICS · 03</span><h4>Remote sensing and satellite imagery</h4><p>Understand satellite imagery and explore its uses for studying territories.</p><div class="catalog-meta"><span>Video · workshop · digital resource</span><b>Fee on request</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Training%20catalogue%20-%20Remote%20sensing">Request programme and fee <span>→</span></a></article></div></section><section class="catalog-group" aria-labelledby="en-catalog-data"><h3 id="en-catalog-data">Data analysis</h3><div class="catalog-grid"><article class="catalog-card"><span class="catalog-number">DATA · 01</span><h4>Prepare and organize your data</h4><p>Structure a dataset, identify common errors and prepare it for analysis.</p><div class="catalog-meta"><span>Video · workshop · digital resource</span><b>Fee on request</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Training%20catalogue%20-%20Data%20preparation">Request programme and fee <span>→</span></a></article><article class="catalog-card"><span class="catalog-number">DATA · 02</span><h4>Analyse data and present results</h4><p>Turn data into clear results that can support decision-making.</p><div class="catalog-meta"><span>Video · workshop · digital resource</span><b>Fee on request</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Training%20catalogue%20-%20Data%20analysis">Request programme and fee <span>→</span></a></article><article class="catalog-card"><span class="catalog-number">DATA · 03</span><h4>Create clear tables and charts</h4><p>Choose tables and visualizations that communicate analysis clearly.</p><div class="catalog-meta"><span>Video · workshop · digital resource</span><b>Fee on request</b></div><a class="catalog-cta" href="mailto:terravisionetudesconseil@gmail.com?subject=Training%20catalogue%20-%20Tables%20and%20charts">Request programme and fee <span>→</span></a></article></div></section></div><p class="catalog-note">Available formats, content and fees are confirmed before registration or purchase. Online payment will be added after a payment provider has been selected.</p></div></section>
-<section class="section faq-section" id="en-faq"><div class="container"><div class="section-heading"><div><div class="section-kicker">06 — FREQUENTLY ASKED QUESTIONS</div><h2>Would you like to<br><em>know more?</em></h2></div><p>Key information before requesting a programme or registering.</p></div><div class="faq-list"><details><summary>What training topics does TERRAVISION offer?</summary><p>The catalogue covers GIS and mapping, remote sensing, data preparation and analysis, and the creation of tables and charts.</p></details><details><summary>Are courses available as videos, books or live sessions?</summary><p>Available formats depend on each topic. Contact us to confirm which resources are ready and what format is offered before ordering.</p></details><details><summary>How much does a course or resource cost?</summary><p>Fees are provided on request together with the detailed programme. No purchase is confirmed until the content and price have been shared with you.</p></details><details><summary>How can I request a programme or register?</summary><p>Click “Request programme and fee” in the catalogue, or contact us on WhatsApp. We will reply with the information you need.</p></details><details><summary>How do I pay?</summary><p>Payment instructions are shared directly before registration. Online payment through this website is not yet available.</p></details><details><summary>Can training be adapted to my level?</summary><p>Tell us your current level and learning objective. We will discuss the appropriate programme and available support.</p></details></div></div></section>
-<section class="section contact-section" id="en-contact"><div class="container contact-wrap"><div><div class="section-kicker">07 — CONTACT</div><h2>Let's discuss<br><em>your project.</em></h2><p>Need support with mapping, spatial analysis, data processing, territorial studies or training? Tell us what you are looking for.</p></div><div class="contact-panel"><span class="contact-label">PROFESSIONAL CONTACT</span><a class="email-link" href="mailto:terravisionetudesconseil@gmail.com">terravisionetudesconseil@gmail.com</a><div class="phone-list"><a href="tel:+23569869557">+235 69 86 95 57</a><a href="tel:+23597620574">+235 97 62 05 74</a></div><p>For information, collaboration or partnership enquiries, email or call us.</p><a class="btn btn-primary" href="mailto:terravisionetudesconseil@gmail.com?subject=Enquiry%20-%20TERRAVISION">Send an email <span>↗</span></a><div class="contact-meta"><span>N'Djamena, Chad</span><span>Assignments depend on projects and partnerships</span></div></div></div></section>
-</main>
-<details class="whatsapp-float"><summary aria-label="Choose a number to contact TERRAVISION on WhatsApp"><span aria-hidden="true">◉</span> WhatsApp</summary><div class="whatsapp-options" aria-label="TERRAVISION WhatsApp numbers"><a href="https://wa.me/23569869557?text=Hello%20TERRAVISION%2C%20I%20would%20like%20information%20about%20your%20training." target="_blank" rel="noopener noreferrer">+235 69 86 95 57</a><a href="https://wa.me/23597620574?text=Hello%20TERRAVISION%2C%20I%20would%20like%20information%20about%20your%20training." target="_blank" rel="noopener noreferrer">+235 97 62 05 74</a></div></details>
-<footer class="site-footer"><div class="container footer-top"><a class="brand brand-footer" href="#en-home" aria-label="TERRAVISION, back to home"><img class="brand-logo" src="logo-terravision.webp" alt="TERRAVISION Studies & Consulting"></a><p>Understand territories. Analyse data. Inform decisions.</p><a href="#en-home" class="back-top">Back to top ↑</a></div><div class="container footer-bottom"><span>© <span id="en-year"></span> TERRAVISION Studies & Consulting.</span><span>Geomatics · Data · Territories · N'Djamena, Chad</span><a href="brochure-en.pdf" target="_blank" rel="noopener">Download brochure (PDF)</a></div></footer>
-</div>
-<script src="script.js"></script>
+  <footer><span>© TERRAVISION Études & Conseil · N’Djamena, Tchad</span><a href="mailto:terravisionetudesconseil@gmail.com">Nous contacter</a></footer>
+  <dialog id="enroll-dialog"><form method="dialog" class="dialog-close"><button aria-label="Fermer">×</button></form><p class="eyebrow dark">DEMANDE D’INSCRIPTION</p><h2 id="dialog-course">Formation</h2><p>Votre application e-mail va s’ouvrir avec une demande préremplie. Vous pourrez compléter vos coordonnées puis envoyer le message.</p><a class="button primary" id="email-enroll" href="#">Continuer par e-mail <span>↗</span></a></dialog>
+  <script src="app.js"></script>
+  <script>if ("serviceWorker" in navigator && location.protocol !== "file:") navigator.serviceWorker.register("./service-worker.js").catch(()=>{});</script>
 </body>
 </html>
+
