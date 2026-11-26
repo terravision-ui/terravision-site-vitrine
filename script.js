@@ -60,6 +60,28 @@ document.addEventListener('click', event => {
   }
 });
 
+document.addEventListener('submit', event => {
+  const form = event.target.closest('[data-contact-form]');
+  if (!form) return;
+  event.preventDefault();
+
+  const values = new FormData(form);
+  const english = form.dataset.formLanguage === 'en';
+  const topic = values.get('topic');
+  const subject = `${english ? 'Website enquiry' : 'Demande depuis le site'} - ${topic}`;
+  const body = [
+    `${english ? 'Name' : 'Nom'}: ${values.get('name')}`,
+    `${english ? 'Email' : 'E-mail'}: ${values.get('email')}`,
+    `${english ? 'Phone / WhatsApp' : 'Téléphone / WhatsApp'}: ${values.get('phone') || (english ? 'Not provided' : 'Non renseigné')}`,
+    `${english ? 'Topic' : 'Sujet'}: ${topic}`,
+    '',
+    `${english ? 'Message' : 'Message'}:`,
+    values.get('message')
+  ].join('\n');
+
+  window.location.href = `mailto:terravisionetudesconseil@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+
 document.querySelectorAll('#year, #en-year').forEach(element => {
   element.textContent = new Date().getFullYear();
 });

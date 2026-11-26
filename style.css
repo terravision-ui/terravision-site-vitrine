@@ -83,3 +83,12 @@
 .language-switch button.active{background:#102b46;color:#fff}
 .site-language[hidden]{display:none!important}
 @media(max-width:680px){.language-switch{align-self:flex-start;margin-top:8px}.language-switch button{padding:7px 12px!important}}
+.contact-form{border-top:1px solid #e4ebe7;margin-top:24px;padding-top:22px;display:grid;gap:8px}
+.contact-form h3{font:700 17px Manrope,sans-serif;color:#17364a;margin:0 0 7px}
+.contact-form label{font-size:11px;font-weight:700;color:#405b6b;margin-top:5px}
+.contact-form label span{font-weight:400;color:#819098}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid #d5e0da;border-radius:4px;padding:11px 12px;background:#fff;color:#17364a;font:13px "DM Sans",sans-serif}
+.contact-form textarea{resize:vertical;min-height:95px}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{outline:2px solid #54ad9b;outline-offset:1px;border-color:#078e89}
+.contact-form button{justify-self:start;border:0;cursor:pointer;margin-top:10px}
+.form-note{font-size:10px;line-height:1.5;color:#7a888d}

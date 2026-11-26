@@ -20,6 +20,10 @@ FORMATIONS
 Les programmes, formats et tarifs sont communiqués sur demande. Le paiement en ligne
 n'est pas activé sur le site.
 
+FORMULAIRE DE CONTACT
+Le formulaire prépare un e-mail dans l'application de messagerie du visiteur. Celui-ci
+doit vérifier puis envoyer le message. Aucun service externe n'est connecté.
+
 RÉFÉRENCES
 Les deux exemples affichés sont présentés comme travaux académiques et techniques de
 référence, et non comme une liste de contrats clients.
